@@ -43,7 +43,6 @@
         Technique use dby adversary/overall class of action eg. Phishing, DDoS, drive-by etc
     6. Resource: 
         Tools or tech used for the attack
-        
 
 #### Host-Based Indicators: 
 Host-based indicators are found by performing an analysis of the infected system within the organizational network. Examples of host-based indicators include filenames, file hashes, registry keys, DLLs, and mutex
