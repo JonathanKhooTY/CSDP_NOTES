@@ -80,7 +80,7 @@ Behavioral IoCs are used to identify specific behavior related to malicious acti
 Generally in the system for long periods of time. Plenty of other characteristics; refer to diagram.
 
 > **APT Lifecycle**: Preparation Initial Intrusion, Expansion, Persistence, Search & Exfiltration, Cleanup
-<img src='/IMAGES/APTLifecycle.png'>
+<img src='IMAGES/APTLifecycle.png'>
 
 
 
