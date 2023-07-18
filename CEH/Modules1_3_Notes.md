@@ -75,5 +75,12 @@ Behavioral IoCs are used to identify specific behavior related to malicious acti
 **Malicious Code**: *Fundamental code that defines basic functionality of malware. May take form of Java Applets, ActiveX Controls, Browser Plugins etc*
 
 
+## Advanced Persistent Threats (APT)
+
+Generally in the system for long periods of time. Plenty of other characteristics; refer to diagram.
+
+> **APT Lifecycle**: Preparation Initial Intrusion, Expansion, Persistence, Search & Exfiltration, Cleanup
+<img src='/IMAGES/APTLifecycle.png'>
+
 
 
