@@ -143,18 +143,22 @@ Malware that resides in RAM, and **executes in RAM**. Leaves no trace/detection 
 
 > Type 3: Exploiting documents with embedded macro, or EXE files to inject malicious payloads into host
 
+**LemonDuck**: LemonDuck is Python-based fileless malware that spreads infections over Microsoft exchange servers and enterprise-level Linux machines worldwide. It removes other malware from the target system and uses cryptojacking abilities to hide and stay intact even after security patches are applied. Both LemonDuck and LemonCat infect the target machine to subvert security controls, steal cryptocurrency accounts, maintain persistence, and make lateral movements.
 ## Dialers
 
 Dialers or spyware dialers are programs that get installed and configured in a system automatically to call a set of contacts at several locations without the user’s consent.
 
+## Ransomware
 
-## Advanced Persistent Threats (APT)
+**BackMatter**: BlackMatter is dangerous ransomware written in C. This ransomware uses encryption keys such as RSA public and AES keys for initializing and implementing Salsa20 encryption on the targeted files. Using this malware, attackers can also gain control over domain controllers, ACLs, and other user access controls (UACs).
+
+# Advanced Persistent Threats (APT)
 
 Generally in the system for long periods of time. Plenty of other characteristics; refer to diagram.
 
 
 
-> **APT Lifecycle**: Preparation, Initial Intrusion, Expansion, Persistence, Search & Exfiltration, Cleanup
+## **APT Lifecycle**: Preparation, Initial Intrusion, Expansion, Persistence, Search & Exfiltration, Cleanup
 <img src='IMAGES/APTLifecycle.png'>
 
 
@@ -192,3 +196,89 @@ Check and set *options* such as LHOST, LPORT etc. Start exploit after to start l
 
 Access LHOST IP/Port in victim machine and download the payload, and execute to connect to listener.
 
+
+
+# SNIFFING
+
+Two basic types of Ethernet environments (TARGETS DATALINK LAYER, AND RESULTS IN ALL LAYERS ABOVE BEING COMPROMISED):
+
+1. **Shared Ethernet**
+
+    Single bus that connects all the hosts that competes for bandwidth.
+    **A form of passive sniffing, and difficult to detect.**
+
+2. **Switched Ethernet**
+
+    Hosts connect with a switch and has to utilise the ARP table to correlate IP addresses with the MAC addresses. More secure than hub, but also possible to be sniffed. Requires **Active sniffing**.
+
+
+## Active Sniffing Techniques
+
+The objective of active sniffing is to **inject ARP packets** into the network to flood the switch's Content Addressable Memory (CAM) table. **This table correlates MAC addresses to the Port on the switch.**
+
+**General Sniffing Tools**: Wireshark, OmniPeek 
+
+> Vulnerable Protocols to sniffing (Data sent in plaintext): 
+    Telnet & Rlogin
+    IMAP
+    HTTP
+    SMTP & NNTP
+    POP
+    FTP
+
+### Mac Flooding
+
+- Turning a switch into a hub by flooding the switch's CAM table with ARP responses, until it enters fail-safe mode and acts as a hub.
+
+- Attacker then just has to change their machine's NIC mode to promiscuous to accept all traffic entering it.
+
+### DHCP Attacks
+
+- **Starvation attack** a DOS attack where flooding of router with DHCP requests, until it runs out of IP addresses to assign. 
+
+- **Rogue DHCP Server attack**  Rogue DHCP server to assign attacker-controlled IP addresses.
+
+### DNS Poisoning
+**Tools**: DerpNSpoof, Ettercap, Evilgrade
+
+### Switch Port Stealing
+
+- Essentially using MAC flooding to ensure that the attacker spoofs their IP and MAC addresses, and ensures that the switch port is reassigned to the attacker, so all data meant for victim is routed to attacker.
+
+### ARP Poisoning
+**Tools**: arpspoof, habu, Ettercap, BetterCAP, dsniff, MITMf, Arpoison
+    
+    arpspoof -i [Interface] -t [Target Host]
+
+**Defending against it**:
+1. Implementation of Dynamic ARP Inspection (DAI). Firstly need to enalbe DHCP snooping for Cisco switches.
+
+        ip dhcp snooping
+
+
+
+### Spoofing Attack
+
+Spoofing include ARP spoofing, MAC spoofing, ICMP Router Discovery Protocol (IRDP) spoofing, VLAN hopping, Spanning Tree Procol (STP) attacks.
+    
+
+## DDoS Categories
+
+### Volumetric Attacks
+> UDP Flood, ICMP, Ping of Death, Smurf
+
+> Bits/s
+
+### Protocol Attacks
+> SYN flood, fragmentation attack
+
+> Packets/s
+
+### Application Layer Attacks
+> Requests/s
+
+
+
+# WEB SERVER ATTACK
+
+##
