@@ -3,6 +3,7 @@ import hashlib
 import itertools
 import string
 import time
+import random
 
 parser=argparse.ArgumentParser()
 
@@ -23,6 +24,10 @@ input_list =[]
 counter = 0
 
 brute_dict={}
+
+saltedPlaintext=[]
+saltedHash=[]
+
 sample_space=list(string.ascii_lowercase)
 
 sample_space.extend(range(10))
@@ -81,6 +86,7 @@ else:
                 if (input_list[i] == brute_dict[j]):
                     print(f'{j} : {brute_dict[j]}')
                     file.write(f'{j} : {brute_dict[j]}\n')
+                    saltedPlaintext.append(j)   #Still unsalted. Salt in next step
                     counter+=1
                     break
             
@@ -88,3 +94,17 @@ else:
 
         print(f'\nTotal time taken: {t1-t0}s')
         file.write(f'\nTotal time taken: {t1-t0}s')
+
+with open('pass6.txt','w') as file:
+    
+    for i in range(len(saltedPlaintext)):
+        saltedPlaintext[i] = saltedPlaintext[i]+random.choice(string.ascii_lowercase)
+        file.write(f'{saltedPlaintext[i]}\n')
+        print(saltedPlaintext[i])
+
+
+with open('salted6.txt','w') as file:
+
+    for line in saltedPlaintext:
+        hashed = hashlib.md5(line.encode()).hexdigest()
+        file.write(f'{hashed}\n')
