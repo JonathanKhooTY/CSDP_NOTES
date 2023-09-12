@@ -1,4 +1,8 @@
-# TOOL LIST
+# TOC
+1. [Tool List](#toollist)
+2. [Malware](#malware)
+
+# TOOL LIST <a name="introduction"></a>
 
 ## Footpringint and Recon
 
@@ -75,7 +79,7 @@ Host-based indicators are found by performing an analysis of the infected system
 Behavioral IoCs are used to identify specific behavior related to malicious activities such as code injection into the memory or running an application's scripts. Well-defined behaviors enable broad protection to block all current and future malicious activities
 
 
-# MODULE 7: MALWARE
+# MODULE 7: MALWARE<a id="introduction"></a>
 
 ## Techniques used to distribute malware
     Increasingly popular method is Search Engine Optimization (SEO): This is where attackers ensure their page comes out on top of search results
