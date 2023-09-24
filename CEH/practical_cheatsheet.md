@@ -1,3 +1,17 @@
+QuickLinks
+
+https://gtfobins.github.io/
+
+https://crackstation.net/
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+
+https://medium.com/@kumarishefu.4507/try-hack-me-write-up-privilege-escalation-linux-privesc-nfs-capstone-challenge-dd69599dcbfa
+
+https://github.com/carlospolop/PEASS-ng
+
+
+
 First things first
 
 > mkdir /var/www/html/share
@@ -51,8 +65,10 @@ Access link is **https://127.0.0.1:9392** , Username: admin, Password: password
 
 # Steganography
 
+OpenStego on Windows (Straightforward)
 
-# Phone Exploitation (Android)
+
+# Phone Exploitation (ADB:5555)
 
 pip3 install colorama
 
@@ -62,7 +78,8 @@ python3 phonesploit.py
 
 ## Password Cracking
 1. L0phtcrack 7 (Windows Password Auditor/Cracker)
-2. 
+2. Hydra
+    > hydra -l [Username] -P [Password list] [Victim IP] [Protocol. SMB, FTP etc]
 
 # Exploitation
 
@@ -73,6 +90,10 @@ python3 phonesploit.py
 
 
 ## Priv Escalation
+
+**Command to look for list with SUID**
+
+> find / -type f -perm -4000 [-ls if u want to list] 2>/dev/null
 
  **NFS**
 
@@ -98,6 +119,9 @@ OR
 
 
 ## SQL Injection
+
+Standard
+> ';or 1=1;--
 
 Inserting values into SQL database. Able to log in after that.
 > ';insert into login values ('john','apple123');--
@@ -130,6 +154,7 @@ https://github.com/urbanadventurer/WhatWeb.git  (WEB APP)
 
 dirsearch.py
 
+HttpRecon (**Run as administrator**): E:\CEH-Tools\CEHv12 Module 13 Hacking Web Servers\Web Server Footprinting Tools\httprecon
 
 Banner grabbing to obtain E-Tag
 > nc -vv www.moviescope.com 80
@@ -151,8 +176,12 @@ Web Crawling and Spidering
 
 ## Analysis
 
+1. For identifying entropy/Entry point:
+ E:\CEH-Tools\CEHv12 Module 07 Malware Threats\Malware Analysis Tools\Static Malware Analysis Tools\Packaging and Obfuscation Tools\DIE 
 
-## RAT
+2. For identifying File Loc: E:\CEH-Tools\CEHv12 Module 07 Malware Threats\Malware Analysis Tools\Static Malware Analysis Tools\String Searching Tools\BinText 
+
+## RAT (Attempt to Nmap for open RDP port 3389 first, and RDP inside)
 
 1. **njRAT**
 
@@ -174,6 +203,7 @@ Navigate to CEHv12 Module 07 Malware Threats\Trojans Types\Remote Access Trojans
 
 # Encryption
 
+Veracrypt.
 
 # Wireless Attacks Operations
 
