@@ -334,3 +334,37 @@ Password cracker
 
 
 
+
+# Udemy
+
+How works the mechanism of a Boot Sector Virus?
+
+> Copies itself to original location of MBR. MOves MBR to another location on hard disk
+
+What type of firewall checks outbound traffic?
+
+> Application Firewall
+
+According to the Payment Card Industry Data Security Standard, when is it necessary to conduct external and internal penetration testing?
+
+> At least once a year and after any significant upgrade or modification
+
+Which type of viruses tries to hide from antivirus programs by actively changing and corrupting the chosen service call interruptions when they are being run?
+
+> Stealth/Tunneling virus (CEH options might provide "Tunneling virus" as an option, but pick Stealth/Tunneling)
+
+Assume the EF = 1 (100%), calculate the SLE, ARO, and ALE.
+
+> 1. AV (Asset value) = $300 + (14 * $10) = $440 - the cost of a hard drive plus the work of a recovery person, i.e.how much would it take to replace 1 asset? 10 hours for resorting the OS and soft + 4 hours for DB restore multiplies by hourly rate of the recovery person.
+
+    2. SLE (Single Loss Expectancy) = AV * EF (Exposure Factor) = $440 * 1 = $440
+
+    3. ARO (Annual rate of occurrence) = 1/3 (every three years, meaning the probability of occurring during 1 years is 1/3)
+
+    4. ALE (Annual Loss Expectancy) = SLE * ARO = 0.33 * $440 = $145.2
+
+
+Identify a vulnerability in OpenSSL that allows stealing the information protected under normal conditions by the SSL/TLS encryption used to secure the Internet?
+
+> Heartbleed Bug
+
