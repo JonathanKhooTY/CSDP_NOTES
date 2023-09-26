@@ -10,6 +10,9 @@ https://medium.com/@kumarishefu.4507/try-hack-me-write-up-privilege-escalation-l
 
 https://github.com/carlospolop/PEASS-ng
 
+https://github.com/tadryanom/dreadlocked_Drupalgeddon2
+
+
 
 
 First things first
@@ -36,7 +39,7 @@ Android: 5555
 FTP: 21
 
 NFS: 2049
-
+RPC: 111
 
 
 # Enumeration
@@ -170,6 +173,14 @@ Web Crawling and Spidering
 
 # SMB Operations
 
+https://book.hacktricks.xyz/network-services-pentesting/pentesting-smb
+
+> mount -t cifs //x.x.x.x/share /mnt/share
+
+> mount -t cifs -o "username=user,password=password" //x.x.x.x/share /mnt/share
+
+## Search a file and download
+> sudo smbmap -R Folder -H <IP> -A <FileName> -q # Search the file in recursive mode and download it inside /usr/share/smbmap
 
 
 # Malware 
