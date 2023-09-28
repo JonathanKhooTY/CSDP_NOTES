@@ -2,6 +2,12 @@
 1. [Tool List](#toollist)
 2. [Malware](#malware)
 
+
+# PORTS
+
+LDAP: 389
+LDAPS: 636
+
 # TOOL LIST <a name="introduction"></a>
 
 ## Footpringint and Recon
@@ -368,3 +374,435 @@ Identify a vulnerability in OpenSSL that allows stealing the information protect
 
 > Heartbleed Bug
 
+Which of the following tiers in the three-tier application architecture is responsible for moving and processing data between them?
+
+> Logic Tier
+
+    Three-tier architecture is a well-established software application architecture that organizes applications into three logical and physical computing tiers: the presentation tier, or user interface; the application tier (logic tier), where data is processed; and the data tier, where the data associated with the application is stored and managed.
+
+Matthew successfully hacked the server and got root privileges. Now he wants to pivot and stealthy transit the traffic over the network, avoiding the IDS.
+
+Which of the following will be the best solution for Matthew?
+
+> Cryptcat
+
+Which of the following SQLi types leverages a database server’s ability to make DNS requests to pass data to an attacker?
+
+> Out-of-band SQL injection
+
+    Out-of-band SQLi techniques would rely on the database server’s ability to make DNS or HTTP requests to deliver data to an attacker. Such is the case with Microsoft SQL Server’s xp_dirtree command, which can be used to make DNS requests to a server an attacker controls; as well as Oracle Database’s UTL_HTTP package, which can be used to send HTTP requests from SQL and PL/SQL to a server an attacker controls.
+
+    In-band SQL injection is the most common and easy-to-exploit of SQL injection attacks. In-band SQL injection occurs when an attacker is able to use the same communication channel to both launch the attack and gather results.
+
+
+You have detected an abnormally large amount of traffic coming from local computers at night. You decide to find out the reason, do a few checks and find that an attacker has exfiltrated user data. Also, you noticed that AV tools could not find any malicious software, and the IDS/IPS has not reported on any non-whitelisted programs.
+
+Which of the following type of malware did the attacker use to bypass your company’s application whitelisting?
+
+> Fileless Malware
+
+    Fileless malware is a type of malicious software that uses legitimate programs to infect a computer. It does not rely on files and leaves no footprint, making it challenging to detect and remove. Modern adversaries know the strategies organizations use to try to block their attacks, and they’re crafting increasingly sophisticated, targeted malware to evade defenses. It’s a race against time, as the most effective hacking techniques are usually the newest ones. Fileless malware has been effective in evading all but the most sophisticated security solutions.
+
+    Fileless attacks fall into the broader category of low-observable characteristics (LOC) attacks, a type of stealth attack that evades detection by most security solutions and frustrates forensic analysis efforts. While not considered a traditional virus, fileless malware does work in a similar way—it operates in memory. Without being stored in a file or installed directly on a machine, fileless infections go straight into memory, and the malicious content never touches the hard drive. Many LOC attacks take advantage of Microsoft Windows PowerShell, a legitimate and useful tool used by administrators for task automation and configuration management. PowerShell consists of a command-line shell and associated scripting language, providing adversaries with access to just about everything and anything in Windows.
+
+Which of the following tools can an attacker use to gather information from the LDAP service?
+
+> JXplorer
+
+Which of the following files determines the basic configuration in an Android application, such as broadcast receivers, services, etc.?
+
+> AndroidManifest.xml
+
+Which of the following AAA protocols can use for authentication users connecting via analog modems, Digital Subscriber Lines (DSL), wireless data services, and Virtual Private Networks (VPN) over a Frame Relay network?
+
+> RADIUS
+
+At which of the following tiers are your colleagues currently working according to the five-tier container technology architecture?
+
+> Tier-1: Developer machines - image creation, testing and accreditation
+
+    Tier-2: Testing and accreditation systems - verification and validation of image contents, signing images and sending them to the registries
+
+    Tier-3: Registries - storing images and disseminating images to the orchestrators based on requests
+
+    Tier-4: Orchestrators - transforming images into containers and deploying containers to hosts
+
+    Tier-5: Hosts - operating and managing containers as instructed by the orchestrator
+
+Which of the following NetBIOS codes is used for obtaining the messenger service running for the logged-in user?
+
+> 3
+    For unique names:
+
+    · 00: Workstation Service (workstation name)
+
+    · 03: Windows Messenger service
+
+    · 06: Remote Access Service
+
+    · 20: File Service (also called Host Record)
+
+    · 21: Remote Access Service client
+
+    · 1B: Domain Master Browser – Primary Domain Controller for a domain
+
+    · 1D: Master Browser
+
+    For group names:
+
+    · 00: Workstation Service (workgroup/domain name)
+
+    · 1C: Domain Controllers for a domain (group record with up to 25 IP addresses)
+
+    · 1E: Browser Service Elections
+
+ 
+You were instructed to check the configuration of the webserver and you found that the server permits SSLv2 connections, and the same private key certificate is used on a different server that allows SSLv2 connections. You understand that this vulnerability makes the web server vulnerable to attacks as the SSLv2 server can leak key information.
+
+Which of the following attacks can an attacker perform using this vulnerability?
+
+> DROWN Attack (Decrypting RSA with Obsolete and Weakened eNcryption)
+
+What of the following is a file which is the rich target to discover the structure of a website during web-server footprinting?
+
+> Robots.txt
+
+    If qns asks for FOLDER, then it is Document Root
+
+You need to transfer sensitive data of the organization between industrial systems securely. For these purposes, you have decided to use short-range wireless communication technology that meets the following requirements:
+
+- Protocol based on the IEEE 203.15.4 standard;
+
+- Range of 10-100 m.
+
+- Designed for small-scale projects which need wireless connection.
+
+Which of the following protocols will meet your requirements?
+
+> Zigbee
+
+Which of the following is a file on a web server that can be misconfigured and provide sensitive information for a hacker, such as verbose error messages?
+
+> php.ini
+
+Which of the following type of viruses avoid detection changing their own code, and then cipher itself multiple times as it replicates?
+
+> Stealth
+    Encryption virus is similar to ransomware
+
+Your organization conducts a vulnerability assessment for mitigating threats. Your task is to scan the organization by building an inventory of the protocols found on the organization’s machines to detect which ports are attached to services such as a web server, an email server or a database server. After this, you will need to select the vulnerabilities on each machine and start executing only the relevant tests.
+
+Which of the following type of vulnerability assessment solutions will you perform?
+
+> Inference-based assessments.
+
+    With inference-based assessment, the scanning process begins by gathering information based on discovery methods, including host identification, operating system detection and fingerprinting port scanning, and protocol detection. Information obtained through discovery enables the scanning engine to determine which ports are attached to services, such as Web servers, databases, and e-mail servers. After the intelligence-gathering phase, the scanning engine intelligently selects and runs appropriate vulnerability checks for the scan. Only vulnerabilities that could be present on each machine's configuration will be tested. Inference-based scanning is an expert systems approach that learns information about a system in the same fashion that a hacker would. Inference-based assessment systems integrate new knowledge as it is discovered. This knowledge is used to build intelligence on the machine in real-time and run precisely the tests that are likely to produce results. Therefore, this approach is more efficient, imposes less load on the machine, and maximizes vulnerability discovery while minimizing false positives and false negatives.
+
+
+Identify the protocol used to secure an LDAP service against anonymous queries?
+
+> NTLM
+
+Which of the following is a cloud solution option where a customer can join with a group of users or organizations to share a cloud environment?
+
+> Community Cloud
+
+Which of the following is the firewall evasion scanning technique that uses a zombie system with low network activity?
+
+> IDLE Scanning
+
+    The idle scan is a TCP port scan method that consists of sending spoofed packets to a computer to find out what services are available. This is accomplished by impersonating another computer whose network traffic is very slow or nonexistent (that is, not transmitting or receiving information). This could be an idle computer, called a "zombie".
+
+
+Default TTL values
+
+> https://subinsb.com/default-device-ttl-values/
+
+
+Which of the following vulnerabilities will you use if you know that the target network uses WPA3 encryption?
+
+> DragonBlood
+    KRACK is for WPA2
+    DragonBlood for WPA3
+
+You found that sensitive data, employee usernames, and passwords are shared in plaintext, paving the way for hackers to perform successful session hijacking.
+
+Which of the following protocols, which can send data using encryption and digital certificates, will help solve this problem? 
+
+> FTPS (Not HTTPS, idk why)
+
+
+Recently your company set up a cloud computing service. Your system administrator reached out to a telecom company to provide Internet connectivity and transport services between the organization and the cloud service provider to implement this service.
+
+Which category does the telecom company fall in the above scenario according to NIST cloud deployment reference architecture?
+
+ > Cloud Carrier
+    A carrier cloud is a class of cloud that integrates wide area networks (WAN) and other attributes of communications service providers’ carrier-grade networks to enable the deployment of highly demanding applications in the cloud. In contrast, classic cloud computing focuses on the data center, and does not address the network connecting data centers and cloud users. This may result in unpredictable response times and security issues when business-critical data are transferred over the Internet.
+
+    Cloud Broker is an entity that manages the use, performance and delivery of cloud services, and negotiates relationships between cloud providers and cloud consumers. As cloud computing evolves, the integration of cloud services may be too complex for cloud consumers to manage alone.
+
+    Cloud broker and its interactions with other parties
+
+    In such cases, a cloud consumer may request cloud services from a cloud broker, instead of contacting a cloud provider directly," according to NIST Cloud Computing Reference Architecture.
+
+
+John sent a TCP ACK segment to a known closed port on a firewall, but it didn't respond with an RST. What conclusion can John draw about the firewall he scanned?
+
+
+> Stateful.
+     TCP ACK segments use for gathering information about firewall or ACL configuration. This type of scan aims to discover information about filter configurations rather than a port state. This type of scanning is rarely useful alone, but when combined with SYN scanning, it gives a more complete picture of the type of present firewall rules. When a TCP ACK segment is sent to a closed port or sent out-of-sync to a listening port, the RFC 793 expected behavior is for the device to respond with an RST. Getting RSTs back in response to an ACK scan gives useful information that can be used to infer the type of firewall present. Stateful firewalls will discard out-of-sync ACK packets, leading to no response. When this occurs, the port is marked as filtered.
+
+
+he attacker, during the attack, installed a scanner on a machine belonging to one of the employees of the target organization and scanned several machines on the same network to identify vulnerabilities to exploit further.
+
+Which of the following type of vulnerability assessment tools employed the attacker?
+
+> Agent based     
+
+    Agent-based scanners reside on a single machine but can scan several devices on the same network.
+
+    Network-based scanners interact only with the real machine where they reside and give the report to the same machine after scanning.
+
+    Proxy scanners are network-based scanners that can scan networks from any machine on the network.
+
+    Cluster scanners can simultaneously perform two or more scans on different devices in the network.
+
+
+The attacker wants to attack the target organization's Internet-facing web server. In case of a successful attack, he will also get access to back-end servers protected by a firewall. The attacker plans to use URL https://mainurl.com/feed.php?url=externalsite.com/feed/to to obtain a remote feed and alter the URL to the localhost to view all the local resources on the target server.
+
+Which of the following types of attacks is the attacker planning to perform?
+
+> Server Side Forgery
+
+Which of the following encryption algorithms is a symmetric key block cipher that has a 128-bit block size, and its key size can be up to 256 bits?
+
+> Twofish
+
+Which of the following types of MIB will your subordinate use to retrieve information about types for workstations and server services?
+
+> LNMIB2.MIB
+    LMMIB2.MIB - Contains object types for workstation and server services.
+
+    DHCP.MIB - Microsoft-defined MIB that contains object types for monitoring the network traffic between remote hosts and DHCP servers.
+
+    HOSTMIB.MIB - Contains object types for monitoring and managing host resources.
+
+    MIB_II.MIB - Contains the Management Information Base (MIB-II), which provides a simple, workable architecture and system for managing TCP/IP-based internets.
+
+    WINS.MIB - Microsoft-defined MIB for the Windows Internet Name Service (WINS).
+
+
+Which of the following documents describes the specifics of the testing, the associated violations and essentially protects both the organization's interest and third-party penetration tester?
+
+> Rules of Engagement 
+
+Confidential information is stored and processed on your company's servers, however, auditing has never been enabled. What of the following should be done before enabling the audit feature?
+
+> Determine impact of enabling audit feature
+
+Attack Blackberry
+
+> BBProxy (BB Attack Toolkit comprises BBPRoxy and BBSCan)
+
+Sniffing via Switch (ACTIVE SNIFFING)
+Sniffing via Hub (PASSIVE)
+
+Which of the following is a vulnerability in modern processors such as Intel, AMD and ARM using speculative execution?
+
+> Spectre and Meltdown
+
+Alex works as a network administrator at ClassicUniversity. There are many Ethernet ports are available for professors and authorized visitors (but not for students) on the university campus.
+
+However, Alex realized that some students connect their notebooks to the wired network to have Internet access.  He identified this when the IDS alerted for malware activities in the network.  What should Alex do to avoid this problem?
+
+> Use 802.1x protocol
+
+The ping utility is used to check the integrity and quality of connections in networks. In the process, it sends an ICMP Echo-Request and captures the incoming ICMP Echo-Reply, but quite often remote nodes block or ignore ICMP. Which of the options will solve this problem?
+
+> use Hping
+
+Identify a tool that can be used for passive OS fingerprinting?
+
+> Tcpdump
+
+Identify the type of partial breaks in which the attacker discovers a functionally equivalent algorithm for encryption and decryption, but without learning the key?
+
+> Global deduction
+
+    Instance (local) deduction — the attacker discovers additional plaintexts (or ciphertexts) not previously known.
+
+    Information deduction — the attacker gains some Shannon information about plaintexts (or ciphertexts) not previously known.
+
+    Total break — the attacker deduces the secret key.
+
+
+SSL and TLS uses BOTH assymetric and symeetric
+
+improper use can cause huge harm. Why do EC-Council experts recommend that security analysts monitor the disabling of unused ISAPI filters?
+
+> Defend against webserver attacks
+
+
+
+Types of Wireless Antennas
+
+1. Directional Antenna
+    Single direction
+
+
+2. Omnidirectional Antenna
+
+    360 degree
+
+3. Parabolic Grid 
+
+    Based on principle of satellite dish, can pick up signals 10 miles or more.
+
+4. Yagi
+
+    Unidirectional. Freq band of 10MHz to VHF and UHF
+
+5. Dipole
+
+    Bidrectional used to support client connections rather than site to site
+
+6. Reflector
+
+    Used to concentrate EM energy.
+
+
+
+Types of vulnerability assessments
+
+REFER TO PAGE 553
+
+NBT stat flags
+
+    Parameter 	Description
+    /a <remotename> 	Displays the NetBIOS name table of a remote computer, where remotename is the NetBIOS computer name of the remote computer. The NetBIOS name table is the list of NetBIOS names that corresponds to NetBIOS applications running on that computer.
+    /A <IPaddress> 	Displays the NetBIOS name table of a remote computer, specified by the IP address (in dotted decimal notation) of the remote computer.
+    /c 	Displays the contents of the NetBIOS name cache, the table of NetBIOS names and their resolved IP addresses.
+    /n 	Displays the NetBIOS name table of the local computer. The status of registered indicates that the name is registered either by broadcast or with a WINS server.
+    /r 	Displays NetBIOS name resolution statistics.
+    /R 	Purges the contents of the NetBIOS name cache and then reloads the pre-tagged entries from the Lmhosts file.
+    /RR 	Releases and then refreshes NetBIOS names for the local computer that is registered with WINS servers.
+    /s 	Displays NetBIOS client and server sessions, attempting to convert the destination IP address to a name.
+    /S 	Displays NetBIOS client and server sessions, listing the remote computers by destination IP address only.
+    <interval> 	Displays selected statistics, pausing the number of seconds specified in interval between each display. Press CTRL+C to stop displaying statistics. If this parameter is omitted, nbtstat prints the current configuration information only once.
+    /? 	Displays help at the command prompt.
+
+    
+Android NFC attack
+
+> tap n ghost
+
+GHOSTWRITING
+
+> Adding arbitary code without affecting functionality
+
+Angler fishing
+
+> Fake helpdesk/support links
+
+COM hijacking
+
+> Modifying windows registry to privilege escalate
+
+Cracking BLE encryption tool
+
+> Crackle
+
+
+ 
+The GNU Radio tool makes use of external RF hardware to generate SDR. It offers a framework and the required tools to generate software radio signals. It also offers processing units for signals to implement software radios. Attackers use GNU Radio to perform various SDR-based attacks on target IoT devices. Before attacking the target device, attackers need to build and configure GNU Radio. After the successful installation of GNU Radio, attackers use the tools below to perform further exploitation. GNU Radio consists of a number of pre-defined programs and tools, which can be used for a variety of tasks. If it is installed from Python, the source files can be found in gr-utils/src/python and gr-uhd/apps. 
+    • uhd_ft → A spectrum analyzer tool that can be connected to a UHD device to find the spectrum at a given frequency
+    • uhd_rx_cfile → Stores wave samples with the help of a UHD device; samples can be stored in a file and analyzed later using GNU Radio or similar tools such as Matlab or Octave
+    • uhd_rx_nogui → Used to obtain and listen to the incoming signals on the audio device
+    • uhd_siggen_gui → Used to create simple signals such as sine, square, or noise • gr_plot → Used to present previously recorded samples saved in a file
+
+
+
+Attackers perform GNSS spoofing using the following techniques. ▪ Interrupting the Lock Mechanism Attackers aim to discover a GNSS receiver’s new lock via a faulty signal. Attackers initiate this process by radiating a jamming signal inside the GNSS receiver, where the receiver requests for the next acquisition. Then, a signal simulator is used to generate a false signal, transmit it to the GNSS targeted receiver, and gain the new lock data of the receiver.
+    ▪ Drag-off Strategy
+    Attackers track the receiver’s position and identify the deviation from the original location to a fake one. Attackers initiate this technique by mirroring the original navigation signals, injecting a progressive misalignment between those signals, and forwarding them to the GNSS receiver. The drag-off strategy is an effective attack that protects attackers from detection by radar systems.
+    ▪ Cancellation Methodology
+    Attackers use dual signal transmission to cancel out individual spoofed signals by introducing false satellite data. The targeted signals are initially spoofed, where the latter is added with a false component that deceives the targeted GNSS receiver. This method is beneficial to the attacker in terms of extracting the code phase data but limited in terms of obtaining the amplitude matching and carrier phase.
+    ▪ Meaconing Method
+    Attackers aim to block and re-broadcast the original signals for masking the actual signal toward the targeted receiver. This attack is effective with mono-and multi-antenna meaconers that control multiple satellites and allows attackers to manipulate the original signal with false positioning data and delay timings. Attackers prefer this method when it is impossible for a spoofer to generate a spreading sequence.
+
+
+PetitPotam Hijacking
+
+> Involves forcing AD to initiate w attacker > NTLM hashes acquired
+
+Components of a Web Server
+    Document Root: Stores critical HTML files related to the web pages of a domain name that will be served in response to the requests
+    Server Root: Stores server's configuration, error, executable, and log files
+
+Web API Hacking methodlogy
+
+> ▪ Identify the target ▪ Detect security standards ▪ Identify the attack surface ▪ Launch attacks
+Module 
+
+
+Operation Cloud Hopper was an extensive attack and theft of information in 2017 directed at MSPs in the United Kingdom (U.K.), United States (U.S.), Japan, Canada, Brazil, France, Switzerland, Norway, Finland, Sweden, South Africa, India, Thailand, South Korea and Australia. The group used MSP's as intermediaries to acquire assets and trade secrets from MSP-client engineering, industrial manufacturing, retail, energy, pharmaceuticals, telecommunications, and government agencies.
+
+
+
+Comparing Approaches to Vulnerability Assessment There are four types of vulnerability assessment solutions: product-based solutions, service-based solutions, tree-based assessment, and inference-based assessment.
+     ▪ Product-Based Solutions Product-based solutions are installed in the organization’s internal network. They are installed either on a private or non-routable space or in the Internet-addressable portion of an organization’s network. If they are installed on a private network (behind the firewall), they cannot always detect outside attacks. ▪ Service-Based Solutions
+
+    Service-based solutions are offered by third parties, such as auditing or security consulting firms. Some solutions are hosted inside the network, while others are hosted outside the network. A drawback of this solution is that attackers can audit the network from the outside.
+
+    In a tree-based assessment, the auditor selects different strategies for each machine or component of the information system. For example, the administrator selects a scanner for servers running Windows, databases, and web services but uses a different scanner for Linux servers. This approach relies on the administrator to provide a starting piece of intelligence, and then to start scanning continuously without incorporating any information found at the time of scanning.
+    
+    Inference-Based Assessment In an inference-based assessment, scanning starts by building an inventory of the protocols found on the machine. After finding a protocol, the scanning process starts to detect which ports are attached to services, such as an email server, web server, or database server. After finding services, it selects vulnerabilities on each machine and starts to execute only those relevant tests.
+
+
+
+	
+
+Which of the following is a mode of operation that includes EAP or RADIUS for centralized client authentication using multiple authentication methods, such as token cards, Kerberos, and certificates?
+
+> WPA2 Enterprise
+
+
+Null cipher
+
+> Hiding in lots of useless text
+
+Grille
+
+> Using a grill as stencil
+
+Jargon
+
+> Gibberish only someone else will understand
+
+Semagram
+
+> Symbols
+
+
+
+	
+
+
+Which of the following firewalls works at the session layer of the OSI model or TCP layer of TCP/IP, forwards data between networks without verification, and blocks incoming packets from the host but allows traffic to pass through
+
+> Circuit Level gateway firewall
+
+
+MarioNet
+
+> Persists even after browser closed
+
+
+OLEID
+
+> Malware analysis on MS office documents
+
+
+DNS proxy poisoning
+
+> Uses Trojan
